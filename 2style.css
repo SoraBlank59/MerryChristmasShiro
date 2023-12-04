@@ -1,0 +1,34 @@
+/* Importing the IM Fell French Canon Google Font */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
+
+
+#showcase {
+    /* bgi */
+    /* background-image: url("Images/header.jpg"); */
+    background-image: url("Images/thegirlss.png");
+    height: 95vh;
+
+    /* bgs */
+    background-size: cover;
+    /* bgp */
+    background-position: center;
+}
+
+/* Media Queries */
+@media (min-width: 992px){
+    .card-text {
+        height: 110px;
+    }
+}
+
+@media (min-width: 1200px){
+    .card-text {
+        height: 90px;
+    }
+}
+
+@media (min-width: 1400px){
+    .card-text {
+        height: 70px;
+    }
+}
