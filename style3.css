@@ -442,12 +442,12 @@ i {
 #white {color: white;}
 
 div.scroll-container {
-    background-color: #333;
+    background-color: #ff3c3c;
     overflow: auto;
     white-space: nowrap;
-    padding: 10px;
+    padding: 1px;
   }
   
   div.scroll-container img {
-    padding: 10px;
+    padding: 1px;
   }
