@@ -363,14 +363,10 @@ a {
 #yout {color: red;}
 
 #main {
-    position: relative;
-    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport (NOTE: VW is used for width) */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 
-    /* justify-content: center; */
-    /* align-items: center; */
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport (NOTE: VW is used for width) */
+    justify-content: center;
+    align-items: center;
 
     /* OR */
     /* Same as setting center to justify-content and align-items (AKA shorthand) */
@@ -435,4 +431,3 @@ video {
 }
 
 
-okay
