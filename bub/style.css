@@ -1,0 +1,433 @@
+/* Importing the Lato Google Font (Regular and Bold) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Basic Style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* The overflow property determines what to do if content overflows an element's box. Setting overflow to hidden will hide/clip the overflowing content. */
+    overflow: hidden; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+}
+
+#hope {display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;}
+
+.btn-1 {
+    height: 38px;
+    background-color: #750783;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 0 20px 0 20px; */
+    color: #fff;
+}
+
+.light, .dark {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.light {
+    background-color: #8200b6;
+    color: #ffffff;
+}
+
+.dark {
+    background-color: #000000;
+    color: #e6e6e6;
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 179, 179);
+    color: #ffffff;
+    min-height: 70px;
+    border-bottom: 3px solid #ff0037;
+    padding: 5px 0;
+
+}
+#highlight, #current a {
+    color: #fff6f6;
+    /* font-weight: 700; */
+    font-weight: bold;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+header a { 
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+h3 a { 
+    color: #ffc0c0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+/* specificity battle */
+#current a:hover, a:hover  {
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    /* background-image: url("Images/laptop.png"); */
+    background-image: url("Images/8671ZZC_Christmas-Caroling.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+#showcase h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/*  */
+/*  */
+/*  */
+#showcast {
+    min-height: 400px;
+    /* background-image: url("Images/laptop.png"); */
+    background-image: url("Images/paper.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+}
+
+#showcast h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+#showcast p {
+    font-size: 20px;
+}
+/*  */
+/*  */
+/*  */
+/* Newsletter */
+#newsletter {
+    background-color: #ff9f9f;
+    padding: 15px;
+    color: #e6e6e6;
+}
+
+#newsletter > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+/* > = DIRECT child */
+#boxes > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+i {
+    font-size: 225px;
+}
+
+/* not using */
+/* 
+.fa-html5 {
+    color: #d45632;
+}
+
+.fa-css3-alt {
+    color: #2d50dc;
+}
+
+.fa-js {
+    color: #f3df50;
+}
+ */
+
+/* About */
+#about {
+    background-color: #cc3030;
+    padding: 20px;
+}
+
+#about > .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 50px;
+}
+
+#about .main-col {
+    color: #fff;
+}
+
+#about .sidebar {
+    margin-top: 10px;
+    
+}
+
+/* Services */
+#services > .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 40px;
+}
+
+#services li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+}
+
+#services .sidebar {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#services input, #services textarea {
+    padding: 5px;
+    width: 90%;
+}
+
+/* Footer */
+footer {
+    background-color: #ff8bb0;
+    color: #e6e6e6;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header > .container, 
+    #newsletter > .container, 
+    #boxes > .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #showcase .container {
+        padding-bottom: 50px;
+    }
+
+    .box {
+        width: 80%;
+    }
+
+    #about > .container,
+    #services > .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* pp */
+/* pp */
+/* pp */
+/* pp */
+/* pp */
+/* pp */
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+
+ .container {
+    width: 80%;
+    margin: auto;
+    /* The overflow property determines what to do if content overflows an element's box. Setting overflow to hidden will hide/clip the overflowing content. */
+    overflow: hidden; 
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+}
+
+#hope {display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box includes padding and border when setting a width or height */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+.yes {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 40%;
+}
+
+a {
+    /* Removes the underline on a link */
+    text-decoration: none;
+    color: #4b5163;
+}
+
+#twit { color: #1DA1F2;}
+
+#yout {color: red;}
+
+#main {
+
+    /* VH (Viewport Height) determines the height of the element by setting it to a percentage of the viewport (NOTE: VW is used for width) */
+    justify-content: center;
+    align-items: center;
+
+    /* OR */
+    /* Same as setting center to justify-content and align-items (AKA shorthand) */
+    place-items: center;
+
+    padding: 0 20px;
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Media/cover.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* The object-fit property determines how a video or image (AKA img element) is resized to fit inside its container (AKA parent element). Setting the value to "cover" causes the video to retain its aspect ratio and fill the given dimension */
+    object-fit: cover;
+}
+
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#content {
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+#click {
+    /* Inline-block allows you to set top and bottom margin as well as width and height. This is not the case with inline */
+    display: inline-block;
+    margin-top: 25px;
+    border: 2px solid white;
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+    font-family: "Press Start 2P";
+}
+
+#click:hover {
+    /* Changes the size of an element */
+    transform: scale(0.95);
+}
+
+

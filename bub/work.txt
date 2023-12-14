@@ -1,0 +1,48 @@
+           <section class="mb-4 col-lg-4">
+                <!-- Card 10 -->
+                <div class="card">
+                    <img src="Images/card4.png" alt="SMpai!!!" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Wyatt</h5>
+                        <p class="card-text"> </p>
+                        <a href="BubsPics.html" class="btn btn-outline-info btn-sm">Pictures</a>
+                        <a href="" class="btn btn-outline-info btn-sm">Video message</a>
+                        <a href="BubsNote.html" class="btn btn-outline-info btn-sm">Message to you</a>
+                     
+                     
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section class="mb-4 col-lg-4">
+                <!-- Card 11 -->
+                <div class="card">
+                    <img src="Images/card5.png" alt="for you" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Gallery</h5>
+                         <p class="card-text"></p>
+                         <a href="gallery.html" class="btn btn-outline-info btn-sm">Pictures</a>
+                   
+                         </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="mb-4 col-lg-4">
+                <!-- Card 12 -->
+                <div class="card">
+                    <img src="Images/card6.png" alt="canada" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Asho Lee</h5>
+                         <p class="card-text"></p>
+                         <a href="ashoPics.html" class="btn btn-outline-info btn-sm">Pictures</a>
+                           <a href="ashoMessage.html" class="btn btn-outline-info btn-sm">Audio message</a>
+                           <a href="ashoNote.html" class="btn btn-outline-info btn-sm">Message to you</a>
+                         </a>
+                    </div>
+                </div>
+            </section>
