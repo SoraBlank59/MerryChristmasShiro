@@ -229,7 +229,7 @@ i {
 
 /* Footer */
 footer {
-    background-color: #2d2b3e;
+    background-color: #350000;
     color: #e6e6e6;
     padding: 20px;
     text-align: center;
@@ -320,7 +320,7 @@ body {
 a {
     /* Removes the underline on a link */
     text-decoration: none;
-    color: #4b5163;
+    color: #2c0000;
 }
 
 #twit { color: #1DA1F2;}

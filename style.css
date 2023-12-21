@@ -57,7 +57,7 @@ ul {
 }
 
 .dark {
-    background-color: #000000;
+    background-color: #ff4958;
     color: #e6e6e6;
 }
 
@@ -355,7 +355,7 @@ body {
 a {
     /* Removes the underline on a link */
     text-decoration: none;
-    color: #4b5163;
+    color: #2c0000;
 }
 
 #twit { color: #1DA1F2;}
