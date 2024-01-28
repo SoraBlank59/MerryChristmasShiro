@@ -116,7 +116,8 @@ h3 a {
 /* Showcase */
 #showcase {
     min-height: 400px;
-     background-image: url("Images/valentines.jpg")
+    /* background-image: url("Images/laptop.png"); */
+    background-image: url("Images/valentines.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
