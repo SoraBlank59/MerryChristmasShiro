@@ -113,11 +113,11 @@ h3 a {
     font-weight: bold;
 }
 
-/* Showcase */
+/* Image for home page here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 #showcase {
     min-height: 400px;
     /* background-image: url("Images/laptop.png"); */
-    background-image: url("Images/Valentines.jpg");
+    background-image: url("Images/Graduation1.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
