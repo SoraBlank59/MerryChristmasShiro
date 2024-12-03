@@ -20,7 +20,7 @@
     </head>
     <body>
     <div id="GuestBook">
-        <h1 class="main-header"> Serverless Guestbook</h1>
+        <h1 class="main-header"> Sheyla's NoteBook</h1>
         <h3 id="t">Recent Entries</h3>
     <!-- Homepage -->
     <div class="container">
@@ -36,12 +36,12 @@
         
         
         <div class="right-block">
-            <h1>Sign my guestbook</h1>
-            <p> Thanks for checking this out. This is my guestbook. Feel free to sign it so I can see you were here.</p>
+            <h1>Make A New Note</h1>
+            <p> Use the buttons bellow to make a new note, View ALL old notes, or Refresh the page.</p>
             <div class="links">
-               <a href="#AllEntries">View All Entries</a>
-                <a href="#SignGuestBook">Sign the Guestbook</a>
-            <a onClick="window.location.reload();">Refresh Guestbook</a>	
+               <a href="#AllEntries">View All Notes</a>
+                <a href="#SignGuestBook">Make a New Note</a>
+            <a onClick="window.location.reload();">Refresh Notebook</a>	
                
             </div>
         </div>
@@ -49,7 +49,7 @@
         
     <div id="SignGuestBook" class="overlay">
         <div id="SendForm" class="sign-guest-book-popup">
-            <h1>Sign The Guestbook</h1>
+            <h1>Whatcha thinking about?</h1>
             <a class="close" href="#">&times;</a>
             <div class="content">
           <label style="display: block;
@@ -58,18 +58,18 @@
             
         <form name="gform" id="gform" enctype="text/plain" action="GOOGLE_FORM_URL" target="hidden_iframe" onsubmit="submitted=true;">
           
-           <label for="GOOGLE_ENTRY_ID_Name"  class="aterisk_after">Name </label>
+           <label for="GOOGLE_ENTRY_ID_Name"  class="aterisk_after">Note topic </label>
           
-            <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Name" id="GOOGLE_ENTRY_ID_Name" placeholder="John Doe." style="background: #ffafc0;" required>
+            <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Name" id="GOOGLE_ENTRY_ID_Name" placeholder="Your Mom" style="background: #ffafc0;" required>
           
-            <label for="GOOGLE_ENTRY_ID_Email">Email</label>
+            <label for="GOOGLE_ENTRY_ID_Email">Name / Email</label>
           
        
-            <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="MarketingPip" style="background: #ffafc0;">
+            <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="Shiro" style="background: #ffafc0;">
           
        <label for="GOOGLE_ENTRY_ID_TextArea"  class="max-length">Guestbook Entry</label>
           
-          <textarea class="form-element" name="GOOGLE_ENTRY_ID_TextArea" id="GOOGLE_ENTRY_ID_TextArea" rows="5" cols="30" oninvalid="this.setCustomValidity('You must sign the guestbook')"
+          <textarea class="form-element" name="GOOGLE_ENTRY_ID_TextArea" id="GOOGLE_ENTRY_ID_TextArea" rows="5" cols="30" oninvalid="this.setCustomValidity('You gotta write a note first silly!')"
       oninput="this.setCustomValidity('')"  maxlength="50" placeholder="Enter Your Message Here" required></textarea>
           
              <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
