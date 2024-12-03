@@ -4,40 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Quality Web Design at Reasonable Prices">
+ 
+  <meta name="description" content="thank you to github.com/MarketingPipeline">
   <meta name="author" content="SMpai">
   <!--  -->
   <script src="https://kit.fontawesome.com/2d5ed3a50a.js" crossorigin="anonymous"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="styles.css">
-  <title>Blank Never Loses</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Leave A Trail</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>	
 </head>
 <body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
   
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyB68RbTnRg-Xzy8IueM7786vUSsWU5Vz0w",
-      authDomain: "shiroproject-9f886.firebaseapp.com",
-      projectId: "shiroproject-9f886",
-      storageBucket: "shiroproject-9f886.appspot.com",
-      messagingSenderId: "860287986858",
-      appId: "1:860287986858:web:d4bcb3c38386aecc6f34d3",
-      measurementId: "G-CFKRRMX1H9"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
-
   <header>  
     <div 
     class="container">
@@ -66,19 +47,122 @@
 
 
      
-  <div class="guestbook-container">
-    <h1>Guest Book</h1>
-    <form id="guestbook-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-    <div id="guestbook-entries"></div>
-</div>
-<script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js"></script>
-<script src="scripts.js"></script>
+  <div id="GuestBook">
+	<h1 class="main-header"> Serverless Guestbook</h1>
+	<h3 id="t">Recent Entries</h3>
+<!-- Homepage -->
+<div class="container">
+
+    <div class="left-block">
+        <div id="json" class="guestbook">
+            
+        </div>
     
+    </div>
+
+
+	
+	
+    <div class="right-block">
+        <h1>Sign my guestbook</h1>
+        <p> Thanks for checking this out. This is my guestbook. Feel free to sign it so I can see you were here.</p>
+        <div class="links">
+           <a href="#AllEntries">View All Entries</a>
+            <a href="#SignGuestBook">Sign the Guestbook</a>
+	    <a onClick="window.location.reload();">Refresh Guestbook</a>	
+           
+        </div>
+    </div>
+</div>
+	
+<div id="SignGuestBook" class="overlay">
+	<div id="SendForm" class="sign-guest-book-popup">
+		<h1>Sign The Guestbook</h1>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      <label style="display: block;
+    text-align: center;" class="aterisk_before" for="gform"> indicates a required field</label>
+      <br>
+		
+    <form name="gform" id="gform" enctype="text/plain" action="GOOGLE_FORM_URL" target="hidden_iframe" onsubmit="submitted=true;">
+      
+       <label for="GOOGLE_ENTRY_ID_Name"  class="aterisk_after">Name </label>
+      
+        <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Name" id="GOOGLE_ENTRY_ID_Name" placeholder="John Doe." style="background: #5EC6C8;" required>
+      
+        <label for="GOOGLE_ENTRY_ID_Email">GitHub Username</label>
+      
+   
+        <input class="form-element short" type="text" name="GOOGLE_ENTRY_ID_Email" id="GOOGLE_ENTRY_ID_Email" placeholder="MarketingPip" style="background: #5EC6C8;">
+      
+   <label for="GOOGLE_ENTRY_ID_TextArea"  class="max-length">Guestbook Entry</label>
+      
+      <textarea class="form-element" name="GOOGLE_ENTRY_ID_TextArea" id="GOOGLE_ENTRY_ID_TextArea" rows="5" cols="30" oninvalid="this.setCustomValidity('You must sign the guestbook')"
+  oninput="this.setCustomValidity('')"  maxlength="50" placeholder="Enter Your Message Here" required></textarea>
+      
+         <label for="g-recaptcha"  class="aterisk_after">Captcha</label>      
+	 <div class="g-recaptcha"
+       data-sitekey="GOOGLE_Captcha_Key"></div>   
+      
+        <input class="form-button" type="submit" value="Submit">
+        <input class="form-button" type="reset" value="Reset Form">
+ 
+    </form>
+		</div>
+	</div>
+</div>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>	
+	
+<div id="AllEntries" class="overlay">
+	<div class="popup">
+		<h2>All Entries</h2>
+		<a class="close" href="#">&times;</a>
+		<div id="AllEntries_Content" class="content" style="height: 25em;overflow-y: auto;">
+	
+            </div>
+		</div>
+	</div>
+</div>
+</div>
+
+</body>
+<script type="text/javascript">
+	
+	
+  // Put your Google Entry Form ID(s) Here
+  var GOOGLE_ENTRY_ID_Name="entry.entry.950375521";   // Name Entry ID
+		
+ var GOOGLE_ENTRY_ID_Email="entry.1234013375";	// Email Entry ID			
+		
+var GOOGLE_ENTRY_ID_Guestbook="entry.1854037503"; // Guestbook Entry ID				
+    
+   // Put your Google Form Link Here  (Make sure to use correct link as documented)
+		
+		
+
+  var Google_Form_Link="https://docs.google.com/forms/d/e/1FAIpQLScE8xHWsco0sgB04LdN2lEwXgCr_cgj_kyJUVYN-YNYNOX9Kg/formResponse?"  
+	
+	
+	 var Google_Form_ID="1cp4Gpz4dwo62cli4YT-lazpc_t6zrbuEIxzvC4W68xU"  
+	 
+	 var Google_Form_Name="Hope"  
+	
+  
+  // Google Recaptcha Key 
+	 
+	var CaptchaKey = "6LcP-JAqAAAAAMdT-IRPR5hlijDrb3TnufBG5ITg" // put your Google Captcha Key here
+  </script> 
+<script src="assets/replace-vars.js">
+</script>
+
+
+<script>
+
+
+  </script>
+
+<script src="assets/guest-book-WIP.js"></script>
+
       <footer>
         <p>Website Created by Wyatt for Sheyla. Site development started 12/3/2023
           <br>
