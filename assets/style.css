@@ -49,7 +49,7 @@
 	 transition: background 0.25s ease;
 }
  .entry:nth-child(even) {
-	 background: #3cbeb9;
+	 background: #fde0e0;
 }
  .entry-info {
 	 font-style: italic;
@@ -143,7 +143,7 @@
 	 color: #000;
 }
  .form-element::placeholder {
-	 color: #2ba395;
+	 color: #ffa9a9;
 }
  .form-element:focus {
 	 outline-color: #ed1b51;
@@ -204,7 +204,7 @@
 	 font-size: 30px;
 	 font-weight: bold;
 	 text-decoration: none;
-	 color: #333;
+	 color: #000000;
 }
  .popup .close:hover {
 	 color: #ff0000;
@@ -234,7 +234,7 @@
 }
  .sign-guest-book-popup h2 {
 	 margin-top: 0;
-	 color: #333;
+	 color: #000000;
 	 font-family: Tahoma, Arial, sans-serif;
 }
  .sign-guest-book-popup .close {
@@ -245,10 +245,10 @@
 	 font-size: 30px;
 	 font-weight: bold;
 	 text-decoration: none;
-	 color: #333;
+	 color: #000000;
 }
  .sign-guest-book-popup .close:hover {
-	 color: #06d85f;
+	 color: #ff0000;
 }
  .sign-guest-book-popup .content {
 	 max-height: 30%;
@@ -304,7 +304,7 @@
 	 border: 1px solid #a30008;
 }
  input:not([type="submit"]):focus, input:not([type="submit"]):placeholder-shown:invalid:not(:focus), input:not([type="submit"]):placeholder-shown:valid:not(:focus) {
-	 border: 1px solid grey;
+	 border: 1px solid rgb(0, 0, 0);
 }
  input:not([type="submit"]):focus {
 	 background: #f7c7c7;
