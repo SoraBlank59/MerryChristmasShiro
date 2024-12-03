@@ -63,10 +63,14 @@ ul {
 
 /* Header */
 header {
-    background-color: rgb(255, 179, 179);
+    /* background-color: rgb(255, 179, 179); */
+    /* standard pink^^^^ */
+    background-color: rgba(177, 0, 0, 0.884); 
     color: #ffffff;
     min-height: 70px;
-    border-bottom: 3px solid #ff0037;
+    /* border-bottom: 3px solid #ff0037; */
+    /* standard red^^^ */
+    border-bottom: 3px solid #004100;
     padding: 5px 0;
 
 }
@@ -113,11 +117,19 @@ h3 a {
     font-weight: bold;
 }
 
-/* Image for home page here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* Showcase */
 #showcase {
     min-height: 400px;
-    /* background-image: url("Images/laptop.png"); */
-    background-image: url("Images/Birthday.jpg");
+    /* 
+    
+    
+    
+    the Image for Index html
+    
+    
+    
+    */
+    background-image: url("Images/good\ luck!.jpg");
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -264,7 +276,7 @@ i {
 
 /* Footer */
 footer {
-    background-color: #ff8bb0;
+    background-color: hwb(341 55% 0%);
     color: #e6e6e6;
     padding: 20px;
     text-align: center;
