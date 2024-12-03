@@ -78,6 +78,9 @@ header {
     color: #fff6f6;
     /* font-weight: 700; */
     font-weight: bold;
+/* added to delete bg on guest html */
+    background: rgb(255, 255, 255, 0);
+
 }
 
 header > .container {
@@ -115,6 +118,15 @@ h3 a {
 #current a:hover, a:hover  {
     color: #ccc;
     font-weight: bold;
+  
+    
+}
+
+#current a:hover  {
+    color: #ffffff;
+    font-weight: bold;
+    background: rgb(255, 255, 255, 0);
+    
 }
 
 /* Showcase */

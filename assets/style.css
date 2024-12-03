@@ -5,12 +5,11 @@
 }
 .main-header {
 	 text-align: center;
-	margin-top: 1.5em;
 }
 
  h1 {
 	 text-align: center;
-	margin-top: 0em;
+
 }
  h3 {
 	 position: relative;
@@ -22,13 +21,13 @@
 }
  a {
 	 text-decoration: none;
-	 color: #cddbe2;
-	 background: #a51c3c;
+	 color: #ff7070;
+	 
 	 transition: all 0.25s ease;
 }
  a:hover {
-	 background: #ed1b51;
-	 color: #fff;
+	 background: #ff8f8f;
+	 color: #ffd8d8;
 }
  h1 {
 	 font-family: 'Ovo', serif;
@@ -45,7 +44,7 @@
 	 width: 30%;
 }
  .entry {
-	 background: #5ec6c8;
+	 background: #f1cdde;
 	 padding: 0.5rem 1.5rem;
 	 transition: background 0.25s ease;
 }
@@ -140,7 +139,7 @@
 	 padding: 0.5em;
 	 border: none;
 	 resize: none;
-	 background: #5ec6c8;
+	 background: #fdc1c1;
 	 color: #000;
 }
  .form-element::placeholder {
@@ -175,7 +174,7 @@
 	 transition: opacity 500ms;
 	 visibility: hidden;
 	 opacity: 0;
-	 overscroll: none;
+
 }
  .overlay:target {
 	 visibility: visible;
@@ -208,7 +207,7 @@
 	 color: #333;
 }
  .popup .close:hover {
-	 color: #06d85f;
+	 color: #ff0000;
 }
  .popup .content {
 	 max-height: 30%;
@@ -296,7 +295,7 @@
 	 background: 0 0;
 }
  input:not([type="submit"]):not(:placeholder-shown) {
-	 background: #5ec6c8;
+	 background: #ebb7b7;
 }
  input:not([type="submit"]):not(:focus):not(:placeholder-shown):valid {
 	 border: 1px solid #00a34a;
@@ -308,7 +307,7 @@
 	 border: 1px solid grey;
 }
  input:not([type="submit"]):focus {
-	 background: #5ec6c8;
+	 background: #f7c7c7;
 }
  form:invalid input[type="submit"] {
 	 opacity: 0.5;
