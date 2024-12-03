@@ -273,9 +273,3 @@ subscribeForm.innerHTML = ` <h1>Sign The Guestbook</h1>
   
 subscribeForm.setAttribute("style", "-webkit-animation: fadeIn 1s; animation: fadeIn 1s;  animation-fill-mode: forwards;");  
 }
-
-// Santize Input - Basic XSS filter 
-
-function encodeHTML(sanizitedInput) {
-    return sanizitedInput.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-}
