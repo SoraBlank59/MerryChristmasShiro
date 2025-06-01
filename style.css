@@ -63,14 +63,16 @@ ul {
 
 /* Header */
 header {
-    /* background-color: rgb(255, 179, 179); */
+    background-color: rgb(255, 179, 179);
     /* standard pink^^^^ */
-    background-color: rgba(177, 0, 0, 0.884); 
+    /* background-color: rgba(177, 0, 0, 0.884); */
+/*christmas colors*/
     color: #ffffff;
     min-height: 70px;
-    /* border-bottom: 3px solid #ff0037; */
+    border-bottom: 3px solid #ff0037; 
     /* standard red^^^ */
-    border-bottom: 3px solid #004100;
+    /*border-bottom: 3px solid #004100;*/
+/*christmas colors*/
     padding: 5px 0;
 
 }
